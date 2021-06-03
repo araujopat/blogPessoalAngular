@@ -14,7 +14,7 @@
                 <div class="col-md-6">
                     <button class="btn btn-light mr-2">Nova Postagem</button>
 
-                    <a class = 'btn btn-outline-light' href=""> Ver Postagens</a>
+                    <a class = 'btn btn-outline-light' href="#postagens"> Ver Postagens</a>
 
                 </div>
             </div>
@@ -31,17 +31,66 @@
 
 </div>
 
-<div class="container mb-5 mt-5">
+<div class="container mb-5 mt-5 " id="postagens">
     <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">A</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">B</a>
-          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">C</a>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+            <a class="nav-item nav-link active text-secondary font-weight-bold" 
+                id="nav-todasPostagens-tab" 
+                data-toggle="tab" 
+                href="#todasPostagens" 
+                role="tab" 
+                aria-controls="nav-todasPostagens" 
+                aria-selected="true">
+                    Todas as Postagens
+            </a>
+
+            <a class="nav-item nav-link text-secondary font-weight-bold" 
+                id="nav-minhasPostagens-tab" 
+                data-toggle="tab" 
+                href="#nav-minhasPostagens" 
+                role="tab" 
+                aria-controls="nav-minhasPostagens" 
+                aria-selected="false">
+                    Minhas Postagens    
+            </a>
+
+            <a class="nav-item nav-link text-secondary font-weight-bold" 
+                id="nav-postagemTema-tab" 
+                data-toggle="tab" 
+                href="#nav-postagemTema" 
+                role="tab" 
+                aria-controls="nav-postagemTema" 
+                aria-selected="false">
+                    Postagens por Tema
+            </a>
+
         </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">A</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">B</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">C</div>
-      </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" 
+            id="nav-todasPostagens" 
+            role="tabpanel" 
+            aria-labelledby="nav-todasPostagens-tab">
+                Todas as Postagens
+        </div>
+
+        <div class="tab-pane fade" 
+            id="nav-minhasPostagens" 
+            role="tabpanel" 
+            aria-labelledby="nav-minhasPostagens-tab">
+                Minhas Postagens
+        </div>
+
+        <div class="tab-pane fade" 
+            id="nav-postagemTema" 
+            role="tabpanel" 
+            aria-labelledby="nav-postagemTema-tab">
+                Postagens por Tema
+        </div>
+
+    </div>
+
 </div>
